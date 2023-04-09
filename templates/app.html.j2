@@ -1,0 +1,11 @@
+<div class="bg-white bg-opacity-75 p-4 rounded-sm">
+    <p />Hello {{ user.email}}
+    <button hx-get='/api/secret' hx-trigger="click" hx-target="#authorization-results" class="btn btn-violet">get secrets...</button>
+    {% if user.is_admin %}
+        {% include "app/admin.html.j2" %}
+    {% else %}
+        {% include "app/default.html.j2" %}
+    {% endif %}
+    <div id="authorization-results">Not yet fetched...</div>
+    <button hx-post="/disconnect" hx-trigger="click" class="btn btn-violet" >Logout...</button>
+</div>

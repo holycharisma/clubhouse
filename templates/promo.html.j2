@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>	
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+	
+	<title>Holy Charisma</title>
+	
+	<style>
+
+body {
+  background-color: floralwhite;
+}
+
+/* not active container styles, override below with more specific selector */
+.player .time-container {
+  color: gray;
+  font-weight: lighter;
+}
+
+.player.amplitude-active-song-container .time-container {
+  color: inherit;
+  font-weight: inherit;
+}
+
+
+.video {
+  height: 300px;
+  width: 535px;
+}
+
+header .header-title {
+  background-image: url('https://cloud.bunny.holycharisma.com/logo-hcc.png');
+    background-size: 22rem;
+    width: 14rem;
+    height: 9rem;
+  background-position-x: -2.1rem;
+  background-position-y: -3.5rem;
+}
+
+header.large {
+  position: relative;
+  left: 40%;  
+}
+
+header.large .social-links {
+  position: relative;
+  left: 109px;
+  bottom: 11px;  
+}
+
+.amplitude-play-pause.amplitude-playing .play {
+  display: none;
+}
+
+.amplitude-play-pause.amplitude-paused .pause {
+  display: none;
+}
+
+p.lede {
+	line-height: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  
+}	
+
+.bio p {
+	line-height: 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+</style>
+
+</head>
+<body>
+	<div class="container mx-auto">
+
+	<header class="title-and-links large hidden lg:block">
+		<div class="header-title"></div>
+		<div class="social-links">
+			<ul>
+				<li class="inline-block">
+					<a href="https://twitch.tv/holycharisma">
+						<ion-icon name="logo-twitch"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://instagram.com/holy.charisma">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://www.tiktok.com/@holy.charisma">
+						<ion-icon name="logo-tiktok"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://www.youtube.com/channel/UC_C1mg3xp4vm1mHSah7o4Mw">
+						<ion-icon name="logo-youtube"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://soundcloud.com/holycharisma">
+						<ion-icon name="logo-soundcloud"></ion-icon>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<header class="title-and-links small block lg:hidden">
+		<div class="header-title mx-auto"></div>
+		<div class="social-links mx-auto w-32">
+			<ul>
+				<li class="inline-block">
+					<a href="https://twitch.tv/holycharisma">
+						<ion-icon name="logo-twitch"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://instagram.com/holy.charisma">
+						<ion-icon name="logo-instagram"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://www.tiktok.com/@holy.charisma">
+						<ion-icon name="logo-tiktok"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://www.youtube.com/channel/UC_C1mg3xp4vm1mHSah7o4Mw">
+						<ion-icon name="logo-youtube"></ion-icon>
+					</a>
+				</li>
+				<li class="inline-block">
+					<a href="https://soundcloud.com/holycharisma">
+						<ion-icon name="logo-soundcloud"></ion-icon>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="header-image-and-bio pt-6">
+		<div class="header-image">
+
+ 			<img class="w-72 mb-12 lg:mb-2 my-2 mr-auto lg:mr-2 block lg:inline mx-auto block lg:inline float-none lg:float-left"
+           src="https://cloud.bunny.holycharisma.com/hc-hello.jpeg">
+
+			<p class="lede indent-2 lg:indent-0 pl-6 pr-4 lg:pr-0 lg:pl-0">
+				The HOLY CHARISMA project was formed in the throes of the Pandemic when
+				guitarist / vocalist Mary Charisma and electro-musician Tommy
+				Charisma set out to pursue what
+				would best be described as a spiritual calling. The duo realized that what
+				they feel when making music together is a special kind of magic. They called this
+				magic HOLY CHARISMA and it became their mission to share it with the world.
+			</p>
+		</div>
+		<div class="bio indent-2 lg:indent-0 pl-6 pr-4 lg:pr-0 lg:pl-0">
+			<p>
+				With this in mind, Mary and Tommy began writing and recording original
+				music in their home studio in San Diego, CA. They draw inspiration from the
+				DIY and anti-establishment ethics of punk, the hypnotic grooves and dance floor
+				catharsis of the disco era, the hummable ear worms of pop, and the
+				eclectic composition of prog rock. The themes of HOLY CHARISMA’s lyrics are deceptively deep,
+				exploring concepts such as joy as an act of resistance and the struggles of
+				personal growth, couched within catchy repeated hooks, a dance-able beat and a laid
+				back slacker punk aesthetic, the emphasis of the music is a fun vibe. HOLY
+				CHARISMA reminds us there is something profound in having fun, something sacred
+				in dancing with abandon, something that makes us feel whole as we sing and sweat
+				and lose ourselves in a room of strangers turned into friends by the common love
+				of music. Welcome to the world of HOLY CHARISMA, a magical dimension where you
+				can let it all go, let it all out, and have a great rockin' time. 
+			</p>
+		</div>
+	</div>
+
+
+	<div class="music w-full mt-12 lg:mt-24 grid grid-cols-1 lg:grid-cols-3 place-content-around">
+
+		<!-- some amplitude js player stuff here ... -->
+		<!-- https://serversideup.net/building-a-single-song-player/ -->
+		
+		<!-- design inspo from https://dribbble.com/shots/6957353-Music-Player-Widget -->
+		<!-- react demo @ https://codepen.io/abxlfazl/pen/YzGEVRP -->
+		
+		<!-- design cards: https://tailwindcomponents.com/component/music-player-cards -->
+		<!-- ampltidue js multi song demo https://codepen.io/serversideup/pen/QPjNYv -->
+		
+			<div class="amplitude-song-container player static mb-12 lg:mb-0 w-72 lg:w-48 mx-auto" data-amplitude-song-index="0">
+			
+				<div class="relative">
+
+					<img class="w-72 h-72 lg:w-48 lg:h-48"
+					     src="" 
+					     data-amplitude-song-info="cover_art_url"
+							 data-amplitude-song-index="0" />
+						
+					<div class="control-container cursor-pointer absolute text-white opacity-75 inset-y-1/3 h-1/3 w-full text-center grid place-items-center">
+					  <div class="amplitude-play-pause text-5xl"
+						     data-amplitude-song-index="0" class="play-pause">
+									<span class="play">
+										<ion-icon name="play"></ion-icon>
+									</span>
+									<span class="pause">
+										<ion-icon name="pause"></ion-icon>
+									</span>		
+						</div>
+					</div>
+				
+				</div>
+
+				<progress
+					class="amplitude-song-played-progress w-full" 
+					id="song-played-progress-0"
+					data-amplitude-song-index="0"></progress>
+
+				<div class="time-container">
+				  <span class="current-time">
+				    <span class="amplitude-current-minutes"
+                  data-amplitude-song-index="0"></span>:<span class="amplitude-current-seconds"
+									                                            data-amplitude-song-index="0"></span>
+				  </span>
+				  <span class="duration float-right">
+				    <span class="amplitude-duration-minutes"
+						      data-amplitude-song-index="0"></span>:<span class="amplitude-duration-seconds"
+									                                            data-amplitude-song-index="0"></span>
+				  </span>
+				</div>
+				<div class="flex items-center place-content-center">
+						<div class="meta-container">
+						  <span data-amplitude-song-info="name"
+							      data-amplitude-song-index="0" class="song-name"></span>
+						</div>
+					
+				</div>
+
+					<!-- player close -->
+				</div>
+
+			<div class="amplitude-song-container player static mb-12 lg:mb-0 w-72 lg:w-48 mx-auto" data-amplitude-song-index="1">
+			
+				<div class="relative">
+
+					<img class="w-72 h-72 lg:w-48 lg:h-48"
+					     src="" 
+					     data-amplitude-song-info="cover_art_url"
+							 data-amplitude-song-index="1" />
+						
+					<div class="control-container cursor-pointer absolute text-white opacity-75 inset-y-1/3 h-1/3 w-full text-center grid place-items-center">
+					  <div class="amplitude-play-pause text-5xl"
+						     data-amplitude-song-index="1" class="play-pause">
+									<span class="play">
+										<ion-icon name="play"></ion-icon>
+									</span>
+									<span class="pause">
+										<ion-icon name="pause"></ion-icon>
+									</span>		
+						</div>
+					</div>
+				
+				</div>
+
+				<progress
+					class="amplitude-song-played-progress w-full" 
+					id="song-played-progress-1"
+					data-amplitude-song-index="1"></progress>
+
+				<div class="time-container">
+				  <span class="current-time">
+				    <span class="amplitude-current-minutes"
+                  data-amplitude-song-index="1"></span>:<span class="amplitude-current-seconds"
+									                                            data-amplitude-song-index="1"></span>
+				  </span>
+				  <span class="duration float-right">
+				    <span class="amplitude-duration-minutes"
+						      data-amplitude-song-index="1"></span>:<span class="amplitude-duration-seconds"
+									                                            data-amplitude-song-index="1"></span>
+				  </span>
+				</div>
+				<div class="flex items-center place-content-center">
+						<div class="meta-container">
+						  <span data-amplitude-song-info="name"
+							      data-amplitude-song-index="1" class="song-name"></span>
+						</div>
+					
+				</div>
+
+					<!-- player close -->
+				</div>
+
+
+			<div class="amplitude-song-container player static mb-12 lg:mb-0 w-72 lg:w-48 mx-auto" data-amplitude-song-index="2">
+			
+				<div class="relative">
+
+					<img class="w-72 h-72 lg:w-48 lg:h-48"
+					     src="" 
+					     data-amplitude-song-info="cover_art_url"
+							 data-amplitude-song-index="2" />
+						
+					<div class="control-container cursor-pointer absolute text-white opacity-75 inset-y-1/3 h-1/3 w-full text-center grid place-items-center">
+					  <div class="amplitude-play-pause text-5xl"
+						     data-amplitude-song-index="2" class="play-pause">
+									<span class="play">
+										<ion-icon name="play"></ion-icon>
+									</span>
+									<span class="pause">
+										<ion-icon name="pause"></ion-icon>
+									</span>		
+						</div>
+					</div>
+				
+				</div>
+
+				<progress
+					class="amplitude-song-played-progress w-full" 
+					id="song-played-progress-2"
+					data-amplitude-song-index="2"></progress>
+
+				<div class="time-container">
+				  <span class="current-time">
+				    <span class="amplitude-current-minutes"
+                  data-amplitude-song-index="2"></span>:<span class="amplitude-current-seconds"
+									                                            data-amplitude-song-index="2"></span>
+				  </span>
+				  <span class="duration float-right">
+				    <span class="amplitude-duration-minutes"
+						      data-amplitude-song-index="2"></span>:<span class="amplitude-duration-seconds"
+									                                            data-amplitude-song-index="2"></span>
+				  </span>
+				</div>
+				<div class="flex items-center place-content-center">
+						<div class="meta-container">
+						  <span data-amplitude-song-info="name"
+							      data-amplitude-song-index="2" class="song-name"></span>
+						</div>
+					
+				</div>
+
+					<!-- player close -->
+				</div>
+
+
+		<!-- music close -->
+		</div>
+
+		<div class="video w-full mx-auto mt-12 lg:mt-24 grid grid-cols-1">
+			<!-- youtube embed -->
+			<iframe class="block lg:hidden justify-self-center"
+			        height="200" width="360"
+							src="https://www.youtube.com/embed/cVVbyfSgNdI"
+							title="YouTube video player" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+
+			<!-- youtube embed -->
+			<iframe class="hidden lg:block justify-self-center"
+			        height="300" width="535"
+							src="https://www.youtube.com/embed/cVVbyfSgNdI"
+							title="YouTube video player" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+		</div>
+	
+	<div class="photos grid grid-cols-1 lg:grid-cols-3 mt-4 lg:mt-32 place-items-center">
+			<img class="w-64 justify-self-center lg:justify-self-end"
+	         src="https://cloud.bunny.holycharisma.com/look-one.jpeg">
+			<img class="w-64 justify-self-center"
+	         src="https://cloud.bunny.holycharisma.com/look-two.jpeg">
+			<img class="w-64 justify-self-center lg:justify-self-start"
+	         src="https://cloud.bunny.holycharisma.com/look-three.jpeg">
+	</div>		
+	
+	<div class="text-center mt-12 mb-4">
+		inquire <a href="mailto:hello@holycharisma.com">hello@holycharisma.com</a>
+	</div>
+		
+	
+	<script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/amplitudejs@v5.3.2/dist/amplitude.js"></script>
+
+
+</div>
+
+	
+	
+	<script>
+  Amplitude.init({
+    "songs": [
+      {
+        "name": "The Friend Song",
+        "url": "https://cloud.bunny.holycharisma.com/the-friend-song-mastered.mp3",
+				"cover_art_url": "https://cloud.bunny.holycharisma.com/the-friends-song.jpg"
+      },
+      {
+        "name": "Fly 2 Infinity",
+        "url": "https://cloud.bunny.holycharisma.com/fly_nov_22.mp3",
+				"cover_art_url": "https://cloud.bunny.holycharisma.com/fly2infinity.jpg"
+      },
+      {
+        "name": "Metanoia (demo)",
+        "url": "https://cloud.bunny.holycharisma.com/metanoia.mp3",
+				"cover_art_url": "https://cloud.bunny.holycharisma.com/metanoia.jpg"
+      }
+    ]
+  });
+	
+	
+	// track seek functionality
+	
+	function genFn(n) {
+		return function handleProgressClicked(e) {
+		  if( Amplitude.getActiveIndex() == n ){
+		    var offset = this.getBoundingClientRect();
+		    var x = e.pageX - offset.left;
+
+		    Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+		  }
+		}
+	}
+	
+	document.getElementById('song-played-progress-0').addEventListener('click', genFn(0));
+	document.getElementById('song-played-progress-1').addEventListener('click', genFn(1));
+	document.getElementById('song-played-progress-2').addEventListener('click', genFn(2));
+	
+	</script>
+</body>
+</html>

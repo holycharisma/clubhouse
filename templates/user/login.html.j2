@@ -1,0 +1,31 @@
+<div class="p-4 rounded-sm" hx-boost="true">
+    <form class="max-w-md" hx-post="/login" hx-target="#hcc-top-hx-target">
+      <div class="grid grid-cols-1 gap-6">
+        <label class="block">
+          <span class="text-white">Email</span>
+          <input
+            type="email"
+            name="email"
+            class="mt-1 block w-full form-input focus:border-violet-500"
+            placeholder="human@holycharisma.com"
+          />
+        </label>
+        <label class="block">
+          <span class="text-white">Password</span>
+          <input
+            name="password"
+            type="password"
+            class="mt-1 block w-full form-input focus:border-violet-500"
+            placeholder=""
+          />
+        </label>
+        <label class="block">
+          <button
+            class="btn-violet inline-block text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
+            Login
+          </button>
+        </label>
+      </div>
+    </form>
+    <p class="text-white pt-1">No account? no problem!</p>
+</div>

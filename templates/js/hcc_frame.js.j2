@@ -1,0 +1,47 @@
+(function() {
+    
+    // set up decryption keys
+
+var origin = '{{ origin_domain  }}';
+var token = '{{ csrf_secret_token }}';
+
+var frame = document.getElementById("hcc-frame").contentWindow;
+var acknowledged = false;
+
+function handleAck(event) {
+    if(event.origin !== origin) return;
+    if (event.data === "ack-token") {
+        acknowledged = true;
+        window.removeEventListener('message', handleAck);
+    }
+}
+
+function sendToken() {
+    if (! acknowledged) {
+    	frame.postMessage({token: token }, origin);
+      requestAnimationFrame(sendToken);
+    }
+}
+
+window.addEventListener('message', handleAck);
+frame.addEventListener('load', sendToken, true);
+
+requestAnimationFrame(sendToken);
+
+})();
+
+(function() {
+    
+    // listen for page reload events
+
+function reload(event) {
+    if(event.origin !== origin) return;
+    if (event.data === "reload") {
+        window.removeEventListener('message', reload);
+        window.location.reload(true);
+    }
+}
+
+window.addEventListener('message', reload);
+
+})();

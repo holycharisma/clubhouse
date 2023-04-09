@@ -1,0 +1,7 @@
+<div>
+    <div class="media-wall">
+    {% for node in media %}
+        {{ node.innerHTML|safe }}
+    {% endfor %}
+    </div>
+</div>
