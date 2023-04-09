@@ -1,0 +1,6 @@
+db/
+result
+.direnv/
+target/
+.env
+.secrets

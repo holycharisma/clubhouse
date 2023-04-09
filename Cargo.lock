@@ -612,6 +612,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "clubhouse"
+version = "0.1.0"
+dependencies = [
+ "askama",
+ "async-sqlx-session",
+ "async-std",
+ "base64",
+ "bcrypt",
+ "chrono",
+ "domain",
+ "dotenv",
+ "jsonwebtokens",
+ "lazy_static",
+ "orion",
+ "sea-orm",
+ "serde",
+ "serde_json",
+ "tide",
+ "tinytemplate",
+ "uuid 1.1.2",
+]
+
+[[package]]
 name = "concurrent-queue"
 version = "1.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1109,29 +1132,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7249a3129cbc1ffccd74857f81464a323a152173cdb134e0fd81bc803b29facf"
 dependencies = [
  "hashbrown 0.11.2",
-]
-
-[[package]]
-name = "hcc-server"
-version = "0.1.0"
-dependencies = [
- "askama",
- "async-sqlx-session",
- "async-std",
- "base64",
- "bcrypt",
- "chrono",
- "domain",
- "dotenv",
- "jsonwebtokens",
- "lazy_static",
- "orion",
- "sea-orm",
- "serde",
- "serde_json",
- "tide",
- "tinytemplate",
- "uuid 1.1.2",
 ]
 
 [[package]]
